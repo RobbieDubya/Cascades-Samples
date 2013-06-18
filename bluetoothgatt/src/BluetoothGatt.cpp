@@ -206,6 +206,7 @@ BluetoothGatt::BluetoothGatt(QObject *parent)
 
     m_gatt_cb.connected = gatt_service_connected_cb;
     m_gatt_cb.disconnected = gatt_service_disconnected_cb;
+    m_gatt_cb.updated = NULL;
 
     if (bt_gatt_init(&m_gatt_cb) != EOK) {
         /* TODO: Add error to UI and abort app */
