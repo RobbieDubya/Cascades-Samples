@@ -152,6 +152,8 @@ void CharacteristicsEditor::setCharacteristic(bt_gatt_characteristic_t *characte
         return;
     }
 
+    m_descriptorsModel->clear();
+
     for (int i = 0; i < count; i++) {
         QVariantMap map;
 
