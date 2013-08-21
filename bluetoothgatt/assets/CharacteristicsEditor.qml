@@ -56,7 +56,7 @@ Page {
 
                     //! [1]
                     TextField {
-                        text: _bluetoothGatt.characteristicValue
+                        text: _bluetoothGatt.editor.characteristicValue
                         layoutProperties: StackLayoutProperties {
                             spaceQuota: 10
                         }
